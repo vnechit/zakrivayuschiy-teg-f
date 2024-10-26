@@ -14,8 +14,8 @@
     ),
     repeating-linear-gradient(
       180deg,
-      var(--background-color-start),
-      var(--background-color-end) 2px,
+      var(--background-color),
+      var(--background-color) 2px,
       transparent 2px,
       transparent 4px
     ),
@@ -341,7 +341,7 @@
 .card__title {
   font-size: 18px;
   font-variation-settings: var(--title-font-weight);
-  padding: 4px 10px;
+  padding: 4px 10px 5px;
 }
 
 .card__image {
@@ -360,11 +360,11 @@
 }
 
 .card__text-container {
-  padding: 24px 25px;
+  padding: 25px 25px 0 25px;
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 27px;
 }
 
 .card__icon-button {
@@ -386,7 +386,8 @@
 
 .card__like-button {
   width: 130px;
-  padding: 9px 0;
+  /* padding: 9px 0; */
+  height: 38px;
 }
 
 .card__like-button-container {
@@ -394,6 +395,7 @@
   align-items: center;
   justify-content: end;
   gap: 6px;
+  padding: 25px;
 }
 
 .dialog {
@@ -459,6 +461,7 @@
   }
 }
 
-.card:last-child .card__text:nth-child(1) {
-  line-height: 21px;
+.card__text {
+  line-height: 1.1667em;
+  font-size: 18px;
 }
